@@ -1,0 +1,3 @@
+function NotesHolder() {
+  this.notes = [];
+}
