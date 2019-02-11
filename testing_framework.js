@@ -18,3 +18,8 @@ var assert = {
   }
 
 }
+
+function describe (string, func) {
+  console.log(string);
+  func;
+}
