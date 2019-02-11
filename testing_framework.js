@@ -2,24 +2,24 @@ var assert = {
 
   contains: function contains(array, object) {
     if (array.includes(object)) {
-      return console.log('%c Test Passed', 'color: #00FF00');
+      return console.log("%cTest Passed", 'background: #d6ffce; color: #157502; font-size: large');
     } else {
-      return console.log(`%c FAIL: expected ${array} to contain ${object}`, 'color: #FF0000');
+      return console.warn(`%cFAIL: expected "${array}" to contain "${object}"`, 'background: #edbbbb; color: #750202; font-size: large');
     }
   }
 ,
   equalsTo: function equalsTo (object1, object2) {
 
     if (object1 === object2) {
-      console.log('%c Test Passed', 'color: #00FF00');
+      console.log("%cTest Passed", 'background: #d6ffce; color: #157502; font-size: large');
     } else {
-      console.log(`%c FAIL: expected "${object1}" to equal "${object2}"`,'color: #FF0000');
+      console.warn(`%cFAIL: expected "${object1}" to equal "${object2}"`,'background: #edbbbb; color: #750202; font-size: large');
     }
   }
 
 }
 
 function describe (string, func) {
-  console.log(string);
+  console.log(`  ^:${string}`)
   func;
 }
