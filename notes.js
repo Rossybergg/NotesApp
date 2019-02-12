@@ -26,4 +26,8 @@ function getText() {
   return text = document.getElementById("newNoteText").value;
 }
 
+function clearTextBox() {
+  document.getElementById("newNoteText").value = "";
+}
+
 web_noteholder = new NotesHolder
