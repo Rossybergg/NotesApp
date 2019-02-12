@@ -4,6 +4,12 @@ body {
   background-image: url(http://files.all-free-download.com//downloadfiles/wallpapers/1600_1200/vista_grass_wallpaper_windows_vista_computers_2735.jpg);
 }
 
+img {
+max-width: 400px;
+ border-radius: 5px;
+height: auto;
+}
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -21,7 +27,7 @@ body {
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   color: #FFFFFF;
   display: block;
   transition: 0.3s;
@@ -35,9 +41,15 @@ body {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 0px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+#spacer {
+  font-size: 20px;
+  margin-left: 30px;
+  color: white;
 }
 
 #main {
@@ -58,11 +70,31 @@ body {
   height: 300px;
   margin: 0;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0.7;
-  
+  transition: 0.3s;
+  box-shadow: 5px 10px RGB(26,42,47);
+}
+
+.note_title {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+
+.image_container {
+  width: 500px;
+  height: 300px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+  transition: 0.3s;
 }
 
 .submit_button {
@@ -81,4 +113,5 @@ top: 50px;
 left: 50px;
   width: 400px;
   height: 200px;
+  font-size: 20px;
 }

@@ -7,13 +7,19 @@
 </head>
 <body>
 
+<div id="image" class="image_container">
+  <img src="public/notepad.png"></img>
+  </div>
 
-  <div class="note_container">
+  <div id="note_id" class="note_container">
+    <div class="note_title">
+      New Note
+      </div>
   <div class="submit_button">
     <button type="button" onclick="web_noteholder.add(getText()); web_noteholder.preview(); clearTextBox()">Save Note</button>
   </div>
   <div class="close_button">
-    <button type="submit">X</button>
+    <button type="button" onclick="hideNewNote()">X</button>
       </div>
     <div class="tb_newNote">
   <textarea id="newNoteText" name="newNoteText" rows="8" cols="80"></textarea>
@@ -23,27 +29,17 @@
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">New Note</a>
-  <p id="demo"></p>
+  <a href="javascript:void(0)" onclick="showNewNote()">New Note</a>
+  <br>
+  <div id="spacer">____________________</div>
+  <br>
+  <div id="demo"></div>
 </div>
 
 <div id="main">
-  <h2>Your Notes</h2>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span><br>
+  <span style="font-size:40px;">Your Notes</span>
 </div>
-
-
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-</script>
 
 <script src="testing_framework.js"></script>
 <script src="notes.js"></script>
