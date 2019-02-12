@@ -34,8 +34,10 @@ function clearTextBox() {
   document.getElementById("newNoteText").value = "";
 }
 
-// function addToPreview() {
-//   document.getElementById("first_note").innerHTML = web_noteholder.preview();
-// }
+// function hide(){
+// var div = document.getElementById('div_id');
+// div.style.visibility = 'hidden';
+// } function that should run after preview (or with show) to make sure the the text entry box dissapears
+
 
 web_noteholder = new NotesHolder
