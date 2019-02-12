@@ -9,7 +9,7 @@
 
   <div class="note_container">
   <div class="submit_button">
-    <button type="button" onclick="web_noteholder.add(getText()); clearTextBox()">Save Note</button>
+    <button type="button" onclick="web_noteholder.add(getText()); web_noteholder.preview(); clearTextBox()">Save Note</button>
   </div>
   <div class="close_button">
     <button type="submit">X</button>
@@ -22,9 +22,7 @@
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">New Note</a>
-  <a href="#">[Note 1]</a>
-  <a href="#">[Note 2]</a>
-  <a href="#">[Note 3]</a>
+  <p id="demo"></p>
 </div>
 
 <div id="main">

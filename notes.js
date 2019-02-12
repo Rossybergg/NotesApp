@@ -2,9 +2,13 @@ function NotesHolder() {
   var notes = [];
 
   function preview() {
-    for (i = 0; i <= notes.length; i++) {
-      return notes[i].substr(0, 19);
+    text = "<ul>";
+    for (i = 0; i < notes.length; i++) {
+      text += "<li>" + notes[i].substr(0, 19) + "</li>";
     }
+    text += "</ul>";
+
+    document.getElementById("demo").innerHTML = text;
   }
 
   function add(string) {
@@ -29,5 +33,9 @@ function getText() {
 function clearTextBox() {
   document.getElementById("newNoteText").value = "";
 }
+
+// function addToPreview() {
+//   document.getElementById("first_note").innerHTML = web_noteholder.preview();
+// }
 
 web_noteholder = new NotesHolder
