@@ -1,3 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="public/style.css">
+  <title>Best note app ever! </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+  <div class="note_container">
+  NOTES</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">New Note</a>
+  <a href="#">[Note 1]</a>
+  <a href="#">[Note 2]</a>
+  <a href="#">[Note 3]</a>
+</div>
+
+<div id="main">
+  <h2>Your Notes</h2>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+</div>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
 <script src="testing_framework.js"></script>
 <script src="notes.js"></script>
 <script src="notes_tests.js"></script>
+
+</body>
+</html>

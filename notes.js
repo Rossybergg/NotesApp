@@ -21,3 +21,5 @@ function NotesHolder() {
   return {notes: notes, preview: preview, add: add, show: show}
 
 }
+
+web_noteholder = new NotesHolder
