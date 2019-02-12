@@ -4,7 +4,7 @@ function NotesHolder() {
   function preview() {
     text = "<ul>";
     for (i = 0; i < notes.length; i++) {
-      text += "<li>" + notes[i].substr(0, 19) + "</li>";
+      text += '<a href="">' + notes[i].substr(0, 19) + '</a>';
     }
     text += "</ul>";
 
