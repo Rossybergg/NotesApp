@@ -11,6 +11,13 @@ function NotesHolder() {
     notes.push(string);
   }
 
-  return {notes: notes, preview: preview, add: add}
+  function show(string) {
+    for (i = 0; i <= notes.length; i++){
+      if (notes.includes(string))
+      {return notes[i]}
+    }
+  }
+
+  return {notes: notes, preview: preview, add: add, show: show}
 
 }
