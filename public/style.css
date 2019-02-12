@@ -53,9 +53,31 @@ body {
 
 .note_container {
   background-color: #FFFFFF;
+  border-radius: 10px;
+  width: 500px;
+  height: 300px;
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0.7;
+}
+
+.submit_button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.close_button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+textarea {
+position: absolute;
+top: 50px;
+left: 50px;
+  width: 400px;
+  height: 200px;
 }

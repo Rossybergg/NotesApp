@@ -22,4 +22,8 @@ function NotesHolder() {
 
 }
 
+function getText() {
+  return text = document.getElementById("newNoteText").value;
+}
+
 web_noteholder = new NotesHolder
