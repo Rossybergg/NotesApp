@@ -6,16 +6,18 @@ function NotesHolder() {
   }
 
   function add(string) {
-    notes.push(string);
+    var safe = escapeHtml(string);
+    notes.push(safe);
   }
 
-  function show(string) {
-    for (i = 0; i <= notes.length; i++){
-      if (notes.includes(string))
-      {return notes[i]}
-    }
+  function escapeHtml(unsafe) {
+    return unsafe.replace(/&/g, "&amp;")
+         .replace(/</g, "&lt;")
+         .replace(/>/g, "&gt;")
+         .replace(/"/g, "&quot;")
+         .replace(/'/g, "&#039;");
   }
 
-  return {notes: notes, preview: preview, add: add, show: show}
+  return {notes: notes, preview: preview, add: add, escapeHtml: escapeHtml}
 
 }

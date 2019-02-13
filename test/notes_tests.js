@@ -11,4 +11,5 @@ noteholder = new NotesHolder;
   describe('See the first 20 characters of a note',
   assert.equalsTo(noteholder.preview("01234567890123456789012345"), "01234567890123456789"));
 
-  describe('See a full note', assert.equalsTo(noteholder.show(noteholder.notes[0]), "01234567890123456789012345"));
+  describe('Special characters are escaped',
+  assert.equalsTo(noteholder.escapeHtml(`&, <, >, ", '`), "&amp;, &lt;, &gt;, &quot;, &#039;"));

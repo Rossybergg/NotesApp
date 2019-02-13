@@ -29,8 +29,6 @@ function hideNewNote() {
   var image = document.getElementById("image");
     image.style.display = "block";
     container.style.display = "none";
-
-
 }
 
 function showNewNote() {
