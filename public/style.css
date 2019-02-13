@@ -2,6 +2,9 @@ body {
 
   font-family: "Lato", sans-serif;
   background-image: url(http://files.all-free-download.com//downloadfiles/wallpapers/1600_1200/vista_grass_wallpaper_windows_vista_computers_2735.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
 }
 
 img {
@@ -114,4 +117,29 @@ left: 50px;
   width: 400px;
   height: 200px;
   font-size: 20px;
+}
+
+.existing_note_container {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  width: 500px;
+  height: 300px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+  transition: 0.3s;
+  box-shadow: 5px 10px RGB(26,42,47);
+  word-wrap: break-word;
+}
+
+#existing_note_text_id {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  font-size: 20px;
+  margin-right:  50px;
+  overflow-wrap: normal;
 }
