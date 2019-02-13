@@ -69,10 +69,11 @@ function defaultTheme() {
 
 function darkTheme() {
   document.body.style.backgroundImage = "url('https://i.imgur.com/xFfBV22.jpg?1')";
+  document.getElementsByClassName(".sidenav").style.color = "#FFFFFF";
 }
 
-function pastelTheme() {
-  document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1524678714210-9917a6c619c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2849&q=80')";
+function lightTheme() {
+  document.body.style.backgroundImage = "url('./public/light.jpg')";
 }
 
 
