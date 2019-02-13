@@ -63,6 +63,18 @@ function fadeIn() {
   document.body.style.opacity = 1;
 }
 
+function defaultTheme() {
+  document.body.style.backgroundImage = "url('http://files.all-free-download.com//downloadfiles/wallpapers/1600_1200/vista_grass_wallpaper_windows_vista_computers_2735.jpg')";
+}
+
+function darkTheme() {
+  document.body.style.backgroundImage = "url('https://i.imgur.com/xFfBV22.jpg?1')";
+}
+
+function pastelTheme() {
+  document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1524678714210-9917a6c619c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2849&q=80')";
+}
+
 
 web_noteholder = new NotesHolder;
 hideNewNote();

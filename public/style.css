@@ -5,7 +5,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   opacity: 0;
-  transition: 4s;
+  transition: 1.5s;
 }
 
 img {
@@ -45,6 +45,13 @@ height: auto;
   color: #FFFFFF;
   display: block;
   transition: 0.3s;
+}
+
+.sidenav .themes {
+  position: absolute;
+  bottom: 100px;
+  left: 0px;
+  font-size: 20px;
 }
 
 .sidenav a:hover {
