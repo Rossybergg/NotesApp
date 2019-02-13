@@ -73,12 +73,15 @@ height: auto;
   height: 300px;
   margin: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 35%;
   opacity: 0.7;
   transition: 0.3s;
   box-shadow: 5px 10px RGB(26,42,47);
+}
+
+.note_container:hover{
+  transform: scale(1.2);
 }
 
 .note_title {
@@ -126,13 +129,16 @@ left: 50px;
   height: 300px;
   margin: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 35%;
   opacity: 0.7;
   transition: 0.3s;
   box-shadow: 5px 10px RGB(26,42,47);
   word-wrap: break-word;
+}
+
+.existing_note_container:hover{
+  transform: scale(1.2);
 }
 
 #existing_note_text_id {
