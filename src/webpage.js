@@ -1,3 +1,11 @@
+function displayPreview(object) {
+  text = "";
+  for (i = 0; i < object.notes.length; i++) {
+    text += `<a href="javascript:void(0)" onclick="showExistingNote('${object.notes[i]}')">` + object.preview(object.notes[i]) + '...</a>';
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+
 function getText() {
   return text = document.getElementById("newNoteText").value;
 }

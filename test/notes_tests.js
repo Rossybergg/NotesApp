@@ -9,6 +9,6 @@ noteholder = new NotesHolder;
   assert.contains(noteholder.notes, "01234567890123456789012345"));
 
   describe('See the first 20 characters of a note',
-  assert.equalsTo(noteholder.preview(), "0123456789012345678"));
+  assert.equalsTo(noteholder.preview("01234567890123456789012345"), "01234567890123456789"));
 
   describe('See a full note', assert.equalsTo(noteholder.show(noteholder.notes[0]), "01234567890123456789012345"));

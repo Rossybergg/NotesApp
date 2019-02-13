@@ -1,12 +1,8 @@
 function NotesHolder() {
   var notes = [];
 
-  function preview() {
-    text = "";
-    for (i = 0; i < notes.length; i++) {
-      text += `<a href="javascript:void(0)" onclick="showExistingNote('${notes[i]}')">` + notes[i].substr(0, 20) + '...</a>';
-    }
-    document.getElementById("demo").innerHTML = text;
+  function preview(note) {
+    return note.substr(0, 20)
   }
 
   function add(string) {
