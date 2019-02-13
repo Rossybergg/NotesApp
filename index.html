@@ -6,10 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
+<body onload="fadeIn()">
 <div id="image" class="image_container">
   <img src="public/notepad.png"></img>
   </div>
+  <div id="title">My Notes</div>
 
   <div id="note_id" class="note_container">
     <div class="note_title">
@@ -46,7 +47,6 @@
 
 <div id="main">
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span><br>
-  <span style="font-size:40px;">Your Notes</span>
 </div>
 
 <script src="./src/notes.js"></script>

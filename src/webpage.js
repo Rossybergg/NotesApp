@@ -59,6 +59,10 @@ function hideExistingNote(){
     image.style.display = "block";
 }
 
+function fadeIn() {
+  document.body.style.opacity = 1;
+}
+
 
 web_noteholder = new NotesHolder;
 hideNewNote();
